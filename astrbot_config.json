@@ -1,0 +1,15 @@
+{
+  "port": 6185,
+  "webconsole": {
+    "enable": true,
+    "port": 6185
+  },
+  "platform": [
+    {
+      "type": "qq",
+      "adapter": "napcat",
+      "ws_url": "ws://napcat:3000",
+      "token": ""
+    }
+  ]
+}
