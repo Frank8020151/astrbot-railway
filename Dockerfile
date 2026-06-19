@@ -1,13 +1,4 @@
-FROM python:3.11-slim
-
-WORKDIR /app
-
-RUN apt-get update && apt-get install -y git && \
-    git clone https://github.com/Soulter/AstrBot.git . && \
-    pip install -r requirements.txt --no-cache-dir
-
-COPY astrbot_config.json /app/
-
+FROM soulter/astrbot:latest
+# 复制你自己的配置文件覆盖容器里的
+COPY astrbot_config.json /app/astrbot_config.json
 EXPOSE 6185
-
-CMD ["python", "main.py"]
