@@ -8,7 +8,7 @@
     {
       "type": "qq",
       "adapter": "napcat",
-      "ws_url": "ws://napcat:3000",
+      "ws_url": "ws://127.0.0.1:6185/ws",
       "token": ""
     }
   ]
